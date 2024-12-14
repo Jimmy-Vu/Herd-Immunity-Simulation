@@ -49,7 +49,9 @@ class Logger(object):
         # COMPLETED: Finish this method. If the person survives, did_die_from_infection
         # should be False.  Otherwise, did_die_from_infection should be True.
         # Append the results of the infection to the logfile
-        with open(self.file_name, 'a') as f:
-            f.write(f"Step number: {step_number}\n")
-            f.write(f"Total population: {population_count}\n")
-            f.write(f"Number of new fatalities: {number_of_new_fatalities}\n")
+        with open(self.file_name, 'a') as log_file:
+            log_file.write(
+                f"Step number: {step_number}\n"
+                f"Total population: {population_count}\n"
+                f"Number of new fatalities: {number_of_new_fatalities}\n"
+            )
