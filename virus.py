@@ -5,10 +5,10 @@ class Virus(object):
         self.name = name
         # COMPLETED Define the other attributes of Virus
         if repro_rate < 0 or repro_rate > 1:
-            print('The reproduction rate must be between 0 and 1')
+            print('The reproduction rate must be between 0 and 1.')
             raise ValueError("The reproduction rate must be between 0 and 1.")
         if mortality_rate < 0 or mortality_rate > 1:
-            print('The mortality rate must be between 0 and 1')
+            print('The mortality rate must be between 0 and 1.')
             raise ValueError("The mortality rate must be between 0 and 1.")
 
         self.repro_rate = repro_rate
