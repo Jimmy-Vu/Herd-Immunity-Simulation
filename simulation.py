@@ -82,6 +82,8 @@ class Simulation(object):
             # the simulation should continue
             time_step_counter += 1
             self.time_step()
+            print(
+                f"Debug time step {time_step_counter}: {len(self.newly_infected)} new infections.")
             should_continue = self._simulation_should_continue()
             self.logger.log_interactions(
                 time_step_counter, len(
